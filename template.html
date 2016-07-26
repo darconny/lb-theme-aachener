@@ -7,8 +7,7 @@
         <p class="description" ng-if="timeline.settings.showDescription" ng-bind="timeline.blog.description"></p>
     </div>
     <div class="header-bar">
-        <div class="sorting-bar">
-            <div class="sorting-bar__title" translate>Sort by:</div>
+        <div class="sorting-bar">            
             <div class="sorting-bar__orders">
                 <div
                     class="sorting-bar__order"
@@ -41,9 +40,9 @@
             </div>
             <button
                 ng-if="timeline.settings.canComment"
-                class="btn ng-cloak"
+                class="btn comment ng-cloak"
                 ng-class="{'active': timeline.comment}"
-                ng-click="timeline.comment = !timeline.comment" translate>Comment</button>
+                ng-click="timeline.comment = !timeline.comment" translate><i class="fa fa-comments"></i> Comment</button>
         </div>
         <div class="header-bar__logo">
             <a href="https://www.sourcefabric.org/liveblog/" target="_blank">

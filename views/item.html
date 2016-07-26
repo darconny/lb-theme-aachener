@@ -10,8 +10,14 @@
     <div ng-switch-when="image">
         <figure>
             <img ng-src="{{ item.picture_url }}" srcset="{{ item.picture_srcset }}" alt="{{ item.meta.caption }}" />
-            <figcaption translate>{{ item.meta.caption }} credit: {{ item.meta.credit }}
+            <figcaption translate>{{ item.meta.caption }} credit: {{ item.meta.credit }}</figcaption>
         </figure>
+    </div>
+    <div ng-switch-when="quote">
+        <blockquote>
+            <p>&bdquo;{{ item.meta.quote }}&ldquo;</p>
+            <h4>{{ item.meta.credit }}</h4>
+        </blockquote>
     </div>
     <article ng-switch-default lb-bind-html html-content="{{ item.text | outboundAnchors }}"></article>
 </div>
