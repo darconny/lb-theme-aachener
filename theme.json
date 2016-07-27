@@ -1,11 +1,11 @@
 {
-    "label": "Classic Theme",
-    "name": "classic",
-    "version": "2.3.18",
-    "author": "Edouard Richard <edouard.richard@sourcefabric.org>",
+    "label": "Aachener Theme",
+    "name": "aachener",
+    "version": "1.0.26",
+    "author": "Darko Tomic <darko.tomic@sourcefabric.org>",
     "repository": {
         "type": "git",
-        "url": "git@github.com:liveblog/lb-theme-classic.git"
+        "url": "git@github.com:liveblog/lb-theme-aachener.git"
     },
     "license": "AGPL-3.0",
     "extends": "angular",
@@ -13,11 +13,11 @@
         "styles/reset.css",
         "styles/embed.css",
         "styles/dropdown.css",
-        "//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic",
+        "//fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i",
         "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     ],
     "styles": [
-        "//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic",
+        "//fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i",
         "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
         "dist/styles.min.css"
     ],
