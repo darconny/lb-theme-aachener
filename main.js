@@ -158,6 +158,12 @@
                 templateUrl: asset.templateUrl('views/author.html'),
             }
         }])
+        //alternative for a 2nd format (as an example for when time should be shown separately from the date)
+        .filter('prettifyIsoDateAlt', [ 'config', function(config) {
+            return function(input) {
+                return moment(input).format(config.settings.datetimeFormatAlt? config.settings.datetimeFormatAlt: 'HH:mm');
+            };
+        }])
         .directive('lbPosts', ['asset', function(asset) {
             return {
                 restrict: 'E',
@@ -168,6 +174,7 @@
                 templateUrl: asset.templateUrl('views/posts.html'),
             }
         }]);
+
     angular.module('infinite-scroll').value('THROTTLE_MILLISECONDS', 1000);
 
 })(angular);

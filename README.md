@@ -1,6 +1,6 @@
-# Classic Theme
+# Aachener Theme
 
-<table><tr><td>Extends</td><td><a href="https://github.com/liveblog/lb-theme-angular">lb-theme-angular</a></td></tr></table>
+<table><tr><td>Extends</td><td><a href="https://github.com/liveblog/lb-theme-angular">lb-theme-aachener</a></td></tr></table>
 
 | Options | Key | Type | Default value |
 |---------|-----|------|---------------|
