@@ -158,10 +158,16 @@
                 templateUrl: asset.templateUrl('views/author.html'),
             }
         }])
-        //alternative for a 2nd format (as an example for when time should be shown separately from the date)
-        .filter('prettifyIsoDateAlt', [ 'config', function(config) {
+        //alternative for showing only the time
+        .filter('prettifyIsoTimeOnly', [ 'config', function(config) {
             return function(input) {
-                return moment(input).format(config.settings.datetimeFormatAlt? config.settings.datetimeFormatAlt: 'HH:mm');
+                return moment(input).format(config.settings.datetimeFormatAlt? config.settings.datetimeFormatTime: 'HH:mm');
+            };
+        }])
+        //alternative for showing only the date
+        .filter('prettifyIsoDateOnly', [ 'config', function(config) {
+            return function(input) {
+                return moment(input).format(config.settings.datetimeFormatAlt? config.settings.datetimeFormatDate: 'DD.MM.YYYY');
             };
         }])
         .directive('lbPosts', ['asset', function(asset) {
