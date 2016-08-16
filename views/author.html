@@ -5,8 +5,8 @@
                        'lb-author__comment': (item.item_type === 'comment')}">
             <img ng-src="{{ item.original_creator.picture_url }}" />
     </div> 
-    <div class="lb-author__time" ng-bind="item.displayDate | prettifyIsoDateAlt"></div>
-    <div class="lb-author__date" ng-bind="item.displayDate | prettifyIsoDate"></div>
+    <div class="lb-author__time" ng-bind="item.displayDate | prettifyIsoTimeOnly"></div>
+    <div class="lb-author__date" ng-bind="item.displayDate | prettifyIsoDateOnly"></div>
     <!-- author name, with or without mailto link  -->
     <div ng-if="!timeline.settings.authorNameLinksToEmail || item.item_type === 'comment'"
          class="lb-author__name"
