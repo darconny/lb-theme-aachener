@@ -1,7 +1,7 @@
 {
     "label": "Aachener Theme",
     "name": "aachener",
-    "version": "1.0.30",
+    "version": "1.0.31",
     "author": "Darko Tomic <darko.tomic@sourcefabric.org>",
     "repository": {
         "type": "git",
